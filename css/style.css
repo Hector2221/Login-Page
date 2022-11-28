@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --firtFonts:'Inter', sans-serif;
+    --white: #fff;
+    --blue: #2F80ED;
+    --gray: #BDBDBD;
+    --gray2:#DDDDDD;
+    --dark: #333333;
+    --gray-dark: #828282;
+    --gray-dark2: #4F4F4F;
+    --black:#000;
+}
+
+.content{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+h1{
+    font-family: var(--firtFonts);
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 63px;
+    text-align: center;
+    color: var(--dark);
+    margin: 11px;
+}
+p{
+    font-family: var(--firtFonts);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--gray-dark);
+}
+a{
+    text-decoration: none;
+    font-family: var(--firtFonts);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: var(--blue);
+}
+.login{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* Left */
+
+.inf-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.google{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 7px 85px;
+    border: 1px solid var(--gray2);
+    background-color: var(--white);
+    border-radius: 6px;
+    font-family: var(--firtFonts);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: var(--dark);
+    margin: 40px 0px;
+}
+.google:hover{
+    cursor: pointer;
+    background-color: var(--gray2);
+}
+.space{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.space hr{
+    width: 150px;
+    height: 1px;
+    background: #E0E0E0;
+    border: 1px solid #E0E0E0;
+    margin: 0 30px;
+}
+.txt-space{
+    font-family: var(--firtFonts);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--black);
+
+
+}
+
+.register{
+    color: var(--black);
+}
+/* form */
+
+form{
+    margin-bottom: 5px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-family: var(--firtFonts);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--dark);
+    margin-bottom: 14px;
+}
+.col{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 419px;
+    padding: 10px 15px;
+    background: var(--white);
+    border: 1px solid var(--gray2);
+    border-radius: 4px;
+    font-family: var(--firtFonts);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+
+.log{
+    font-family: var(--firtFonts);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+    border-radius: 6px;
+    padding: 10px 150px;
+}
+.log:hover{
+    cursor: pointer;
+}
+/* Rigth */
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+
+    background: url(../img/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 45%;
+}
+.img-login{
+    height: 100vh;
+    width: 80%;
+}
+
+@media screen and (max-width: 960px) {
+    .login {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px min-content;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .image{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 90%;
+        height: 200px;
+        background: url(../img/Rectangle\ 1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+        margin-left: 5%;
+    }
+    .inf-login{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+  
+  @media screen and (max-width: 508px) {
+    .login {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px min-content;
+    }
+    input{
+        width: 360px;
+    }
+    .image{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+        margin-left: 0;
+    }
+    h1{
+        font-size: 32px;
+    }
+    p{
+        font-size: 12px;
+    }
+    a{
+        font-size: 13px;
+    }
+  }
+
+
