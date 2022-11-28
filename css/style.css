@@ -225,6 +225,10 @@ input{
     a{
         font-size: 13px;
     }
+    .space hr{
+        width: 100px;
+        margin: 0 10px;
+    }
   }
 
 
